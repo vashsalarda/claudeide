@@ -49,6 +49,7 @@
     "linux": {
       "icon": "assets/icon.png",
       "category": "Development",
+      "maintainer": "Rhey Minoza",
       "target": [
         {
           "target": "deb",
