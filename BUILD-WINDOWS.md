@@ -41,7 +41,7 @@ cd $env:USERPROFILE\claudeide
 
 ```powershell
 npm install        # compiles node-pty for Windows, pulls electron-builder
-npm run dist       # produces dist\ClaudeIDE-Setup-<version>.exe
+npm run dist:win   # produces dist\ClaudeIDE-Setup-<version>.exe
 ```
 
 Double-click the installer in `dist\` to install. Done.

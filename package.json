@@ -9,7 +9,8 @@
     "test": "node test/detector.test.js",
     "rebuild": "electron-rebuild -f -w node-pty",
     "postinstall": "electron-rebuild -f -w node-pty",
-    "dist": "electron-builder --win",
+    "dist": "electron-builder --linux deb AppImage",
+    "dist:win": "electron-builder --win",
     "pack": "electron-builder --win --dir",
     "dist:linux": "electron-builder --linux deb AppImage",
     "pack:linux": "electron-builder --linux --dir"
