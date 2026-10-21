@@ -6,7 +6,7 @@ Linux package. The configured artifacts target x86_64 Ubuntu systems:
 - `dist/ClaudeIDE-<version>-linux-x64.deb` — installable Debian package
 - `dist/ClaudeIDE-<version>.AppImage` — portable application image
 
-## Build on Ubuntu 26.04
+## Build on Ubuntu
 
 Install the build tools and Electron's Linux development dependencies:
 
