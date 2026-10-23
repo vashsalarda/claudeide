@@ -12,7 +12,9 @@
     "dist": "electron-builder --win",
     "pack": "electron-builder --win --dir",
     "dist:linux": "electron-builder --linux deb AppImage",
-    "pack:linux": "electron-builder --linux --dir"
+    "pack:linux": "electron-builder --linux --dir",
+    "dist:mac": "electron-builder --mac dmg zip --arm64 --x64",
+    "pack:mac": "electron-builder --mac --dir"
   },
   "author": "Rhey Minoza",
   "license": "MIT",
@@ -64,6 +66,26 @@
           ]
         }
       ]
+    },
+    "mac": {
+      "category": "public.app-category.developer-tools",
+      "target": [
+        {
+          "target": "dmg",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        },
+        {
+          "target": "zip",
+          "arch": [
+            "arm64",
+            "x64"
+          ]
+        }
+      ],
+      "artifactName": "${productName}-${version}-mac-${arch}.${ext}"
     },
     "deb": {
       "depends": [
